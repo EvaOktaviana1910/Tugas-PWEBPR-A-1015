@@ -399,6 +399,14 @@ header .navbar{
         border-radius: 20px;
     }
 
+    header .navbar a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+    
+    }
+
 
     .title h1{
         width: 425px;

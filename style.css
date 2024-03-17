@@ -386,7 +386,7 @@ header .navbar a{
 
 @media (min-width: 425px) and (max-width: 1279px) {
 
-    .navbar {
+    header .navbar {
         top: auto;
         bottom: 0;
         width: 425px;
@@ -402,11 +402,18 @@ header .navbar a{
         text-align: center;
         align-items: center;
         justify-content: center;
-        z-index: 999;
+        z-index: 9999;
         background-color: #D9D9D9;
+        border-radius: 20px;
     }
 
-    .title p{
+    .header .navbar a{
+        justify-content: center;
+        background-color: pink;
+    }
+
+
+    .title h1{
         width: 425px;
         justify-content: center;
         align-items: center;
@@ -427,55 +434,32 @@ header .navbar a{
         width: 425px;
         height: auto;
         display: flex;
-        /* biar flex kepisah atas bawah */
         flex-direction: column; 
-        /* gap: 20px; */
         justify-content: center;
         align-items: center;
     }
-
-    .flex3 {
-        width: 288.53px;
-        height: 221px;
-        display: flex;
-        /* biar flex kepisah atas bawah */
-        flex-direction: row; 
-        margin-bottom: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .flex2 {
-        width: 288.53px;
-        height: 221px;
-        display: flex;
-        /* biar flex kepisah atas bawah */
-        flex-direction: row; 
-        margin-bottom: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-
-
     .Tentara {
-        width: 260px;
-        height: 00px;
+        width: 289px;
+        height: 120px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         border-radius: 20px;
-        background-color: #D5FFDD;
-        
+        margin-top: 150px;
+        margin-left: 50px;
     }
     
-    .Tentara img {
-        margin-bottom: 100px;
+    .flex3 img {
+        margin-bottom: 170px;
         width: 230px;
         height: 230px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
     }
-
-    .Tentara button {
-        /* width: 212.41px;
+    
+    .Tentara1 button {
+        width: 212.41px;
         height: 45.43px;
         border-radius: 15;   
         font-family: Poppins;
@@ -486,51 +470,38 @@ header .navbar a{
         text-align: center;
         border: none;
         position: absolute;
-        margin-left: -0px;
-        margin-bottom: 50px;
+        margin-left:-10px;
+        margin-bottom: 30px;
         color: #FFFFFF;
         background-color: #399349;
-        display: flex;
-        flex-direction: column; */
-        width: 212.41px;
-        height: 45.43px;
-        border-radius: 15px;
+    }
+    
+    .Tentara h1 {
+        width: 133px;
+        height: 0;
         font-family: Poppins;
-        font-size: 20px;
         font-weight: 500;
         line-height: 30px;
         letter-spacing: 0em;
-        margin-top: 50px;
         text-align: center;
-        border: none;
-        position: absolute;
-        color: #FFFFFF;
-        background-color: #E29A00;
-        margin-top: 120px;
-    }
-
-    .Tentara h2 {
-        font-family: Poppins;
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 36px;
+        margin-bottom:60px;
+        margin-top: 70px;
+        margin-left: 30px;
         letter-spacing: 0em;
-        text-align: center;
-        margin-top: 180px;
-        margin-left: -0px;
+        line-height: 2;
     }
     
-    .Tentara p{
+    .Tentara1{
+        width: 169px;
         font-family: Poppins;
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 500;
-        line-height: 21px;
+        line-height: 12px;
         letter-spacing: 0em;
         text-align: center;
-        margin-top: 250px;
-        margin-left: -0px;
+        margin-bottom: 20px;
+        margin-left: 10px;
     }
-
 
     .flex4 {
         width: 425px;
@@ -539,9 +510,15 @@ header .navbar a{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        gap: 50px;
+    }
+
+    .flex3{
+        width: 289px;
+        height: 347px;
         margin-bottom: 20px;
-        gap: 80px;
-        /* background-color: aquamarine; */
+        display: flex;
+        flex-direction: column;
     }
     
     .flex5 {
@@ -550,16 +527,12 @@ header .navbar a{
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-bottom: 20px;
-        /* gap: 30px; */
-        /* background-color: blueviolet; */
+        gap: 30px;
     }
-
     .petani {
         width: 288.53px;
         height: 221px;
         border-radius: 20;
-        /* display: flex; */
         align-items: center;
         justify-content: center;
         background-color: #FFF4DC;
@@ -568,6 +541,7 @@ header .navbar a{
         width: 213.26px;
         height: 208.72px
     }
+    
     .petani button {
         width: 212.41px;
         height: 45.43px;
@@ -614,10 +588,12 @@ header .navbar a{
         background-color: #FF5573;
         margin-top: 120px;
     }
+    
     .fotografer {
         width: 288.53px;
         height: 315px;
         border-radius: 20;
+        gap: 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -628,26 +604,28 @@ header .navbar a{
         height: 230px;
         width: 230px;
     }
-    .fotografer h2 {
+    .teksfotografer h1{
         width: 133px;
         height: 0;
         font-family: Poppins;
-        font-size: 24px;
         font-weight: 500;
         line-height: 30px;
         letter-spacing: 0em;
         text-align: center;
+        margin-bottom:60px;
+        margin-top: 70px;
+        letter-spacing: 0em;
+        line-height: 2;
     }
-    .fotografer p {
+    .teksfotograferp1 {
         width: 169px;
-        /* height: auto; */
         font-family: Poppins;
-        font-size: 12px;
+        font-size: 15px;
         font-weight: 500;
         line-height: 12px;
         letter-spacing: 0em;
         text-align: center;
-        margin-bottom: 70px;
+        margin-bottom: 20px;
     }
     
     .fotografer button {
@@ -660,6 +638,7 @@ header .navbar a{
         line-height: 30px;
         letter-spacing: 0em;
         margin-top: 50px;
+        margin-bottom: 60px;
         text-align: center;
         border: none;
         position: absolute;
@@ -668,38 +647,32 @@ header .navbar a{
     }
     .flex2 {
         width: 425px;
-        height: 0;
+        height: 1300px;
         display: flex;
         flex-direction: column;
         gap: 25px;
-        /* background-color: brown; */
+        background-color: #FFFFFF;
     }
     .flex6 {
         width: 425px;
         height: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
+        gap: 35px;
         background-color: #FFFFFF;
     }
     
-    .flex7 {
-        width: 425px;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        background-color: #FFFFFF;
-    }
-    .dokter{
+    .dokter {
         width: 288.53px;
         height: 221px;
         border-radius: 20;
-        display: flex;
-        flex-direction: column;
-        background-color: #FFFFFF;
+        background-color: #E9E8E2;
+        justify-content: center;
+    }
+    .dokter img {
+        height: 213px;
+        width: 213px;
+    }
+    .dokter h1 {
+        display: none;
     }
     .dokter button {
         width: 212.41px;
@@ -710,25 +683,31 @@ header .navbar a{
         font-weight: 500;
         line-height: 30px;
         letter-spacing: 0em;
-        margin-top: 50px;
+        margin-bottom: 90x;
+        margin-right: 90px;
         text-align: center;
         border: none;
         position: absolute;
         color: #FFFFFF;
-        background-color: #3279AF;
+        margin-top: 165px;
+        background-color: #CAC8B3;
     }
-    .dokter img {
-        height: 230px;
-        width: 230px;
-    }
-
-    .pilot{
+    .pilot {
         width: 288.53px;
         height: 221px;
         border-radius: 20;
+        background-color: #E9E8E2;
         display: flex;
-        flex-direction: column;
-        background-color: #FFFFFF;
+        justify-content: center;
+        align-items: center;
+        border-color: #CAC8B3;
+    }
+    .pilot img {
+        height: 213px;
+        width: 213px;
+    }
+    .pilot h1 {
+        display: none;
     }
     .pilot button {
         width: 212.41px;
@@ -739,15 +718,129 @@ header .navbar a{
         font-weight: 500;
         line-height: 30px;
         letter-spacing: 0em;
-        margin-top: 50px;
+        margin-bottom: 90x;
+        margin-right: 90px;
         text-align: center;
         border: none;
         position: absolute;
         color: #FFFFFF;
-        background-color: #3279AF;
+        margin-top: 145px;
+        background-color: #CAC8B3;
     }
-    .pilot img {
-        height: 230px;
-        width: 230px;
+    .ilmuwan {
+        width: 288.53px;
+        height: 221px;
+        border-radius: 20;
+        background-color: #E9E8E2;
+        border-color: #D8D6C1;
+        align-items: center;
+        justify-content: center;
     }
+    
+    .ilmuwan img {
+        height: 213px;
+        width: 213px;
+    }
+    .ilmuwan h1 {
+        display: none;
+    }
+    
+    .ilmuwan button {
+        width: 212.41px;
+        height: 45.43px;
+        border-radius: 15px;
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0em;
+        margin-bottom: 90x;
+        margin-right: 90px;
+        text-align: center;
+        border: none;
+        position: absolute;
+        color: #FFFFFF;
+        margin-top: 145px;
+        background-color: #CAC8B3;
+    }
+    .flex7 {
+        width: 425px;
+        height: auto;
+        display: flex;
+        gap: 35px;
+        flex-direction: column;
+        align-items: center;
+        background-color: #FFFFFF;
+    }
+    .pembalap {
+        width: 288.53px;
+        height: 221px;
+        border-radius: 20px;
+        background-color: #FFDBC5;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .pembalap img {
+        height: 213px;
+        width: 213px;
+        margin-bottom: 18px;
+    }
+    .pembalap h1 {
+        display: none;
+    }
+    
+    .pembalap button {
+        width: 212.41px;
+        height: 45.43px;
+        border-radius: 15px;
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0em;
+        margin-right: 100px;
+        text-align: center;
+        border: none;
+        position: absolute;
+        color: #FFFFFF;
+        margin-top: 145px;
+        background-color: #E36415;
+    }
+    .astronout {
+        width: 288.53px;
+        height: 221px;
+        border-radius: 20px;
+        background-color: #8FC5ED;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .astronout img {
+        height: 213px;
+        width: 213px;
+        margin-bottom: 18px;
+    }
+    .astronout h1 {
+        display: none;
+    }
+    
+    .astronout button {
+        width: 212.41px;
+        height: 45.43px;
+        border-radius: 15px;
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0em;
+        margin-right: 100px;
+        text-align: center;
+        border: none;
+        position: absolute;
+        color: #FFFFFF;
+        margin-top: 145px;
+        background-color: #275E87;
+    }
+
 }

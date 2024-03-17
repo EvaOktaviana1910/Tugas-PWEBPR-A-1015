@@ -27,14 +27,6 @@ header .navbar{
     transition: all 0.3s ease-in-out;
 }
 
-header .navbar a{
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-
-}
-
 .content{
     width:1280px;
     display:flex;

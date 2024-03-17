@@ -399,11 +399,6 @@ header .navbar{
         border-radius: 20px;
     }
 
-    .header .navbar a{
-        justify-content: center;
-        background-color: pink;
-    }
-
 
     .title h1{
         width: 425px;
